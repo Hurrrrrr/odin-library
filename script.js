@@ -3,7 +3,8 @@
 let myLibrary = [];
 let bookHeaders = ["Title", "Author", "Pages", "Read?", "", ""];
 
-function Book(title, author, pages, read) {
+class Book {
+    constructor(title, author, pages, read) {
     this.title = title;
     this.author = author;
     this.pages = pages;
@@ -11,6 +12,7 @@ function Book(title, author, pages, read) {
         this.read = true;
     } else {
         this.read = false;
+    }
     }
 }
 
